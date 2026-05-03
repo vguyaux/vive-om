@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vive Om Property Solutions — Real Estate Solutions Designed Around Your Situation</title>
+    <meta
+      name="description"
+      content="Foreclosure, inheritance, divorce, major repairs — when life shifts, your home options should bend with it. We listen first, then build a plan around your goals."
+    />
+    <link rel="canonical" href="https://vive-om.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vive-om.com/" />
+    <meta property="og:title" content="Vive Om Property Solutions — Real estate solutions designed around your situation" />
+    <meta property="og:description" content="Foreclosure, inheritance, divorce, major repairs — when life shifts, your home options should bend with it. We listen first, then build a plan around your goals." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=630&fit=crop&q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vive Om Property Solutions" />
+    <meta name="twitter:description" content="Real estate solutions designed around your situation. Listen first. Then plan." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=630&fit=crop&q=80" />
+    <meta name="theme-color" content="#1F3A2E" />
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%231F3A2E'/><text x='50' y='68' font-family='Georgia,serif' font-size='60' fill='%23FBF8F3' text-anchor='middle'>V</text></svg>" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+              sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            },
+            colors: {
+              cream: {
+                50: '#FBF8F3',
+                100: '#F6F1E7',
+                200: '#EDE3D0',
+              },
+              ink: {
+                900: '#16201C',
+                700: '#2C3A33',
+                500: '#566962',
+                400: '#7A8A82',
+              },
+              forest: {
+                700: '#1F3A2E',
+                800: '#15281F',
+                900: '#0E1C16',
+              },
+              clay: {
+                400: '#D89A7A',
+                500: '#C97B53',
+                600: '#A65D38',
+              },
+            },
+            letterSpacing: {
+              tightest: '-0.04em',
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #FBF8F3;
+        color: #16201C;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-display {
+        font-family: 'Fraunces', serif;
+        font-optical-sizing: auto;
+      }
+      .grain::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(rgba(22, 32, 28, 0.08) 1px, transparent 1px);
+        background-size: 3px 3px;
+        opacity: 0.4;
+        pointer-events: none;
+        mix-blend-mode: multiply;
+      }
+      .fade-edge {
+        mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+      }
+      details[open] summary .chev {
+        transform: rotate(45deg);
+      }
+      .chev {
+        transition: transform 0.2s ease;
+      }
+      .nav-blur {
+        backdrop-filter: saturate(160%) blur(12px);
+        -webkit-backdrop-filter: saturate(160%) blur(12px);
+      }
+      .underline-grow {
+        background-image: linear-gradient(currentColor, currentColor);
+        background-size: 0% 1px;
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        transition: background-size 0.3s ease;
+      }
+      .underline-grow:hover {
+        background-size: 100% 1px;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+      }
+      .float-slow {
+        animation: float 8s ease-in-out infinite;
+      }
+    </style>
+  </head>
+
+  <body class="bg-cream-50 text-ink-900">
+    <!-- ======================== NAV ======================== -->
+    <header class="fixed top-0 inset-x-0 z-50 nav-blur bg-cream-50/70 border-b border-ink-900/5">
+      <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2 group">
+          <span class="w-8 h-8 rounded-full bg-forest-700 flex items-center justify-center">
+            <span class="font-display text-cream-50 text-lg leading-none">V</span>
+          </span>
+          <span class="font-display text-lg tracking-tight">Vive Om <span class="text-ink-500 font-normal">Property Solutions</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm text-ink-700">
+          <a href="#situations" class="underline-grow">Situations</a>
+          <a href="#options" class="underline-grow">Options</a>
+          <a href="#process" class="underline-grow">Process</a>
+          <a href="#stories" class="underline-grow">Stories</a>
+          <a href="#faq" class="underline-grow">FAQ</a>
+        </div>
+        <a
+          href="#contact"
+          class="inline-flex items-center gap-2 bg-forest-700 hover:bg-forest-800 text-cream-50 text-sm font-medium px-4 py-2 rounded-full transition"
+        >
+          Start a conversation
+          <svg class="w-3.5 h-3.5" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <!-- ======================== HERO ======================== -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 relative z-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream-200/70 text-ink-700 text-xs font-medium mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-clay-500"></span>
+            No-pressure consultation · No obligation
+          </div>
+          <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tightest text-forest-800">
+            Real estate solutions designed around <em class="not-italic text-clay-600">your situation</em>.
+          </h1>
+          <p class="mt-6 text-lg text-ink-700 max-w-xl leading-relaxed">
+            Foreclosure stress, an inherited home, divorce, major repairs — life rarely arrives on a tidy schedule. We
+            listen first, then build a plan that fits your timeline, your home, and the life you're trying to land in.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#contact" class="inline-flex items-center gap-2 bg-forest-700 hover:bg-forest-800 text-cream-50 px-6 py-3.5 rounded-full font-medium transition">
+              Tell us about your property
+              <svg class="w-4 h-4" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+            </a>
+            <a href="#options" class="inline-flex items-center gap-2 text-ink-700 hover:text-forest-700 px-2 py-3 font-medium transition">
+              See the options we explore
+            </a>
+          </div>
+          <div class="mt-12 flex items-center gap-6">
+            <div class="flex -space-x-3">
+              <img class="w-10 h-10 rounded-full ring-2 ring-cream-50 object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop&crop=faces&q=80" alt="" />
+              <img class="w-10 h-10 rounded-full ring-2 ring-cream-50 object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=faces&q=80" alt="" />
+              <img class="w-10 h-10 rounded-full ring-2 ring-cream-50 object-cover" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=120&h=120&fit=crop&crop=faces&q=80" alt="" />
+              <img class="w-10 h-10 rounded-full ring-2 ring-cream-50 object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop&crop=faces&q=80" alt="" />
+            </div>
+            <p class="text-sm text-ink-500 max-w-xs leading-relaxed">
+              Trusted by homeowners navigating life's harder chapters. Every conversation starts with listening.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 relative">
+          <div class="relative grid grid-cols-12 grid-rows-6 gap-3 h-[560px]">
+            <div class="col-span-8 row-span-4 rounded-3xl overflow-hidden shadow-xl float-slow">
+              <img
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=900&fit=crop&q=80"
+                alt="A warmly lit suburban home at dusk"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="col-span-4 row-span-3 col-start-9 rounded-3xl overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=600&h=600&fit=crop&q=80"
+                alt="A couple at their kitchen table reviewing paperwork"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="col-span-4 row-span-3 col-start-9 row-start-4 rounded-3xl overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600&h=600&fit=crop&q=80"
+                alt="House keys being handed across a wooden table"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="col-span-8 row-span-2 row-start-5 rounded-3xl overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&h=400&fit=crop&q=80"
+                alt="A renovated, sunlit kitchen interior"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <!-- Floating credibility card -->
+          <div class="absolute -bottom-6 -left-6 bg-cream-50 border border-ink-900/10 rounded-2xl p-5 shadow-2xl max-w-xs hidden md:block">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-forest-700/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-forest-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.39 7.36H22l-6.19 4.5 2.36 7.36L12 16.72l-6.17 4.5 2.36-7.36L2 9.36h7.61L12 2z"/></svg>
+              </div>
+              <div>
+                <div class="text-xs font-medium text-ink-500">Built on trust</div>
+                <div class="font-display text-base text-forest-800">Listen, then plan.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== EMPATHY / SITUATIONS ======================== -->
+    <section id="situations" class="relative py-24 bg-cream-100 border-y border-ink-900/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-2xl">
+          <div class="text-xs font-medium tracking-widest uppercase text-clay-600 mb-4">Situations we hear every week</div>
+          <h2 class="font-display text-4xl md:text-5xl tracking-tightest text-forest-800 leading-[1.05]">
+            Many homeowners face unexpected property challenges.
+          </h2>
+          <p class="mt-5 text-ink-700 text-lg leading-relaxed">
+            You're not in a category — you're in a chapter. Here are the most common ones we help people through. None of
+            them require you to have your next steps figured out.
+          </p>
+        </div>
+
+        <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Card -->
+          <article class="group relative overflow-hidden rounded-2xl bg-cream-50 border border-ink-900/5 hover:border-forest-700/30 transition">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop&q=80" alt="Stack of letters and bills on a kitchen counter" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl text-forest-800">Foreclosure or mortgage stress</h3>
+              <p class="mt-2 text-ink-500 text-sm leading-relaxed">Letters from the bank. Missed payments. Options that feel like they're shrinking. They usually aren't — but you need someone who'll lay them out plainly.</p>
+            </div>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-2xl bg-cream-50 border border-ink-900/5 hover:border-forest-700/30 transition">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&h=600&fit=crop&q=80" alt="An older home with a wraparound porch in soft afternoon light" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl text-forest-800">An inherited home</h3>
+              <p class="mt-2 text-ink-500 text-sm leading-relaxed">Across the country. Full of memory. Maybe shared between siblings who don't agree on what's next. We help families decide without forcing a verdict.</p>
+            </div>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-2xl bg-cream-50 border border-ink-900/5 hover:border-forest-700/30 transition">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop&q=80" alt="A moving box and a folded blanket on a hardwood floor" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl text-forest-800">Divorce or relocation</h3>
+              <p class="mt-2 text-ink-500 text-sm leading-relaxed">A move that has to happen on a timeline you didn't choose. Sometimes a clean exit. Sometimes a creative one. We can do either.</p>
+            </div>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-2xl bg-cream-50 border border-ink-900/5 hover:border-forest-700/30 transition">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1503594384566-461fe158e797?w=800&h=600&fit=crop&q=80" alt="A house exterior mid-renovation with scaffolding" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl text-forest-800">A home that needs major repairs</h3>
+              <p class="mt-2 text-ink-500 text-sm leading-relaxed">Roof. Foundation. Decades of deferred fixes. You don't need to repair it before talking to us — that's often the point of the conversation.</p>
+            </div>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-2xl bg-cream-50 border border-ink-900/5 hover:border-forest-700/30 transition">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1605114704983-f0f3afe9f59c?w=800&h=600&fit=crop&q=80" alt="An empty room with light coming through bare windows" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl text-forest-800">A vacant or distressed property</h3>
+              <p class="mt-2 text-ink-500 text-sm leading-relaxed">Sitting empty. Costing you in taxes, insurance, and worry. Every month it stays that way is a month it earns nothing back.</p>
+            </div>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-2xl bg-cream-50 border border-ink-900/5 hover:border-forest-700/30 transition">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop&q=80" alt="A landlord reviewing paperwork at a desk near a window" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl text-forest-800">A landlord ready to step back</h3>
+              <p class="mt-2 text-ink-500 text-sm leading-relaxed">Tired tenants. Tired of the calls. You don't have to sell to exit — and if you do sell, you don't have to evict to do it.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== OPTIONS ======================== -->
+    <section id="options" class="relative py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-10 mb-16">
+          <div class="lg:col-span-5">
+            <div class="text-xs font-medium tracking-widest uppercase text-clay-600 mb-4">Possible options</div>
+            <h2 class="font-display text-4xl md:text-5xl tracking-tightest text-forest-800 leading-[1.05]">
+              Four paths we may explore — together.
+            </h2>
+          </div>
+          <div class="lg:col-span-6 lg:col-start-7 flex items-end">
+            <p class="text-ink-700 text-lg leading-relaxed">
+              We don't push one solution. The right answer is the one that fits your timeline, your equity, and what you
+              actually want next. Most conversations land on a blend of these.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-5">
+          <!-- Option 1 -->
+          <article class="relative overflow-hidden rounded-3xl bg-forest-700 text-cream-50 p-8 md:p-10 min-h-[420px] flex flex-col justify-between">
+            <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&h=900&fit=crop&q=80" alt="" class="absolute inset-0 w-full h-full object-cover opacity-25"/>
+            <div class="absolute inset-0 bg-gradient-to-tr from-forest-900/90 via-forest-800/70 to-transparent"></div>
+            <div class="relative">
+              <div class="flex items-center gap-3 mb-6">
+                <span class="w-10 h-10 rounded-full bg-cream-50/15 flex items-center justify-center font-display">01</span>
+                <span class="text-xs uppercase tracking-widest text-cream-200">A direct sale</span>
+              </div>
+              <h3 class="font-display text-3xl md:text-4xl tracking-tightest leading-tight">Sell as-is. No staging, no showings, no list.</h3>
+              <p class="mt-4 text-cream-100/85 leading-relaxed max-w-md">
+                A straightforward purchase on a timeline you set. No repairs requested. No financing contingencies to wait on. The right path when speed and certainty matter most.
+              </p>
+            </div>
+            <div class="relative flex items-center gap-2 text-sm text-cream-100">
+              <span class="w-1.5 h-1.5 rounded-full bg-clay-400"></span>
+              Best when you need to close on a fixed date
+            </div>
+          </article>
+
+          <!-- Option 2 -->
+          <article class="relative overflow-hidden rounded-3xl bg-cream-50 border border-ink-900/10 p-0 min-h-[420px] grid grid-rows-[3fr_4fr]">
+            <div class="relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=600&fit=crop&q=80" alt="A bright kitchen mid-renovation with new cabinetry" class="w-full h-full object-cover"/>
+            </div>
+            <div class="p-8 md:p-10 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="w-10 h-10 rounded-full bg-forest-700/10 text-forest-700 flex items-center justify-center font-display">02</span>
+                  <span class="text-xs uppercase tracking-widest text-clay-600">Renovate, then sell</span>
+                </div>
+                <h3 class="font-display text-3xl tracking-tightest text-forest-800 leading-tight">We fund the work. You share the upside.</h3>
+                <p class="mt-3 text-ink-500 text-sm leading-relaxed max-w-md">
+                  When the home has more story than equity left exposed, a targeted renovation often nets you more than selling as-is — without you writing a check or coordinating contractors.
+                </p>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-ink-500 pt-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-clay-500"></span>
+                Best when the home has hidden upside
+              </div>
+            </div>
+          </article>
+
+          <!-- Option 3 -->
+          <article class="relative overflow-hidden rounded-3xl bg-cream-50 border border-ink-900/10 p-0 min-h-[420px] grid grid-rows-[3fr_4fr]">
+            <div class="relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&h=600&fit=crop&q=80" alt="A modern home with a manicured front yard" class="w-full h-full object-cover"/>
+            </div>
+            <div class="p-8 md:p-10 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="w-10 h-10 rounded-full bg-forest-700/10 text-forest-700 flex items-center justify-center font-display">03</span>
+                  <span class="text-xs uppercase tracking-widest text-clay-600">Convert to a rental</span>
+                </div>
+                <h3 class="font-display text-3xl tracking-tightest text-forest-800 leading-tight">Don't sell. Hold — and let the home pay you.</h3>
+                <p class="mt-3 text-ink-500 text-sm leading-relaxed max-w-md">
+                  Sometimes the right answer isn't an exit. We'll walk through what your home could earn as a long-term rental or short-term stay, and handle the conversion if it's the right fit.
+                </p>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-ink-500 pt-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-clay-500"></span>
+                Best when you'd rather keep the asset
+              </div>
+            </div>
+          </article>
+
+          <!-- Option 4 -->
+          <article class="relative overflow-hidden rounded-3xl bg-clay-500 text-cream-50 p-8 md:p-10 min-h-[420px] flex flex-col justify-between">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=900&fit=crop&q=80" alt="" class="absolute inset-0 w-full h-full object-cover opacity-25"/>
+            <div class="absolute inset-0 bg-gradient-to-tr from-clay-600/85 via-clay-500/70 to-transparent"></div>
+            <div class="relative">
+              <div class="flex items-center gap-3 mb-6">
+                <span class="w-10 h-10 rounded-full bg-cream-50/20 flex items-center justify-center font-display">04</span>
+                <span class="text-xs uppercase tracking-widest text-cream-50/90">Partnership</span>
+              </div>
+              <h3 class="font-display text-3xl md:text-4xl tracking-tightest leading-tight">A joint plan. We bring capital and crew.</h3>
+              <p class="mt-4 text-cream-50/90 leading-relaxed max-w-md">
+                You stay on title or co-own. We finance the renovation, manage the project, and split the proceeds when the home sells. The right shape when you want a piece of the upside without doing the work.
+              </p>
+            </div>
+            <div class="relative flex items-center gap-2 text-sm text-cream-50/90">
+              <span class="w-1.5 h-1.5 rounded-full bg-cream-50"></span>
+              Best when you want upside without the lift
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PROCESS ======================== -->
+    <section id="process" class="relative py-28 bg-forest-800 text-cream-50 overflow-hidden">
+      <div class="absolute inset-0 grain"></div>
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-2xl mb-16">
+          <div class="text-xs font-medium tracking-widest uppercase text-clay-400 mb-4">A simple process</div>
+          <h2 class="font-display text-4xl md:text-5xl tracking-tightest leading-[1.05]">
+            Three steps. Zero pressure.
+          </h2>
+          <p class="mt-5 text-cream-100/80 text-lg leading-relaxed">
+            You stay in control the entire way. Each step is a conversation, not a commitment. You can stop at any
+            point — and most people who reach out don't end up choosing the first option we discuss.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="relative">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=900&h=700&fit=crop&q=80" alt="A couple talking with an advisor at a kitchen table" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex items-baseline gap-3 mb-3">
+              <span class="font-display text-5xl text-clay-400 leading-none">01</span>
+              <h3 class="font-display text-2xl">Tell us your story</h3>
+            </div>
+            <p class="text-cream-100/75 leading-relaxed">
+              A short call or form — whichever you prefer. The home, the timeline, the why. No paperwork, no commitment.
+            </p>
+          </div>
+
+          <div class="relative md:mt-12">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&h=700&fit=crop&q=80" alt="Two people reviewing documents and a laptop" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex items-baseline gap-3 mb-3">
+              <span class="font-display text-5xl text-clay-400 leading-none">02</span>
+              <h3 class="font-display text-2xl">We map the options</h3>
+            </div>
+            <p class="text-cream-100/75 leading-relaxed">
+              Within a few days you'll have side-by-side scenarios with real numbers — not vague promises. Sell now, sell after, hold, partner.
+            </p>
+          </div>
+
+          <div class="relative md:mt-24">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&h=700&fit=crop&q=80" alt="A clean, well-lit modern home exterior" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex items-baseline gap-3 mb-3">
+              <span class="font-display text-5xl text-clay-400 leading-none">03</span>
+              <h3 class="font-display text-2xl">You choose your path</h3>
+            </div>
+            <p class="text-cream-100/75 leading-relaxed">
+              Or none of them. Either way, you leave with clarity. If you say yes, we handle the heavy parts from there.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PROPERTY TYPES ======================== -->
+    <section class="relative py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-10 items-end mb-14">
+          <div class="lg:col-span-7">
+            <div class="text-xs font-medium tracking-widest uppercase text-clay-600 mb-4">Properties we commonly work with</div>
+            <h2 class="font-display text-4xl md:text-5xl tracking-tightest text-forest-800 leading-[1.05]">
+              The condition of the home isn't the obstacle you think it is.
+            </h2>
+          </div>
+          <div class="lg:col-span-4 lg:col-start-9">
+            <p class="text-ink-700 leading-relaxed">
+              You don't need to clean it, fix it, or even visit it. We've worked with homes in nearly every state of repair — and lack of it.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <figure class="relative aspect-[3/4] rounded-2xl overflow-hidden group">
+            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600&h=800&fit=crop&q=80" alt="A craftsman-style home with a deep porch" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-900/80 via-forest-900/0 to-transparent"></div>
+            <figcaption class="absolute bottom-4 left-4 right-4 font-display text-cream-50 text-xl">Homes needing repair</figcaption>
+          </figure>
+
+          <figure class="relative aspect-[3/4] rounded-2xl overflow-hidden group lg:translate-y-8">
+            <img src="https://images.unsplash.com/photo-1551038247-3d9af20df552?w=600&h=800&fit=crop&q=80" alt="A historic brick home with mature trees" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-900/80 via-forest-900/0 to-transparent"></div>
+            <figcaption class="absolute bottom-4 left-4 right-4 font-display text-cream-50 text-xl">Inherited properties</figcaption>
+          </figure>
+
+          <figure class="relative aspect-[3/4] rounded-2xl overflow-hidden group">
+            <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&h=800&fit=crop&q=80" alt="A duplex with a small front yard and parking" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-900/80 via-forest-900/0 to-transparent"></div>
+            <figcaption class="absolute bottom-4 left-4 right-4 font-display text-cream-50 text-xl">Rental properties</figcaption>
+          </figure>
+
+          <figure class="relative aspect-[3/4] rounded-2xl overflow-hidden group lg:translate-y-8">
+            <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&h=800&fit=crop&q=80" alt="A vacant home with overgrown yard" class="w-full h-full object-cover group-hover:scale-105 transition duration-700"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-900/80 via-forest-900/0 to-transparent"></div>
+            <figcaption class="absolute bottom-4 left-4 right-4 font-display text-cream-50 text-xl">Vacant homes</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== APPROACH STRIP ======================== -->
+    <section class="relative py-24 bg-cream-100 border-y border-ink-900/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl overflow-hidden aspect-[4/5]">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&h=1100&fit=crop&q=80" alt="An advisor and homeowner shaking hands warmly in a sunlit room" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7">
+          <div class="text-xs font-medium tracking-widest uppercase text-clay-600 mb-4">Our approach</div>
+          <h2 class="font-display text-4xl md:text-5xl tracking-tightest text-forest-800 leading-[1.05]">
+            We work for the homeowner — not the deal.
+          </h2>
+          <ul class="mt-8 space-y-5">
+            <li class="flex gap-4">
+              <span class="mt-1 w-6 h-6 rounded-full bg-forest-700/10 text-forest-700 flex items-center justify-center text-sm flex-shrink-0">→</span>
+              <div>
+                <div class="font-display text-lg text-forest-800">Listen first. Always.</div>
+                <p class="text-ink-500 leading-relaxed">No pitch on the first call. We want to understand the situation before we suggest anything.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="mt-1 w-6 h-6 rounded-full bg-forest-700/10 text-forest-700 flex items-center justify-center text-sm flex-shrink-0">→</span>
+              <div>
+                <div class="font-display text-lg text-forest-800">Real numbers, not estimates that move.</div>
+                <p class="text-ink-500 leading-relaxed">When we put a number on the table, it's the number. No surprise re-trades the week of closing.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="mt-1 w-6 h-6 rounded-full bg-forest-700/10 text-forest-700 flex items-center justify-center text-sm flex-shrink-0">→</span>
+              <div>
+                <div class="font-display text-lg text-forest-800">If selling isn't your best move, we'll say so.</div>
+                <p class="text-ink-500 leading-relaxed">Sometimes the right advice is to keep the home, get a tenant in, or talk to your lender first. We'll point you there.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="mt-1 w-6 h-6 rounded-full bg-forest-700/10 text-forest-700 flex items-center justify-center text-sm flex-shrink-0">→</span>
+              <div>
+                <div class="font-display text-lg text-forest-800">Your timeline. Not ours.</div>
+                <p class="text-ink-500 leading-relaxed">Close in two weeks or six months. Take a year to decide. We're not running a stopwatch.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== TESTIMONIALS ======================== -->
+    <section id="stories" class="relative py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-2xl mb-14">
+          <div class="text-xs font-medium tracking-widest uppercase text-clay-600 mb-4">Stories from homeowners</div>
+          <h2 class="font-display text-4xl md:text-5xl tracking-tightest text-forest-800 leading-[1.05]">
+            Different chapters. Different paths home.
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5">
+          <figure class="rounded-3xl bg-cream-100 p-8 flex flex-col justify-between min-h-[380px]">
+            <blockquote class="font-display text-2xl leading-snug text-forest-800">
+              "We thought we had to fix the roof before we could even talk to anyone. They walked us through three different paths in one afternoon."
+            </blockquote>
+            <figcaption class="mt-8 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop&crop=faces&q=80" class="w-12 h-12 rounded-full object-cover" alt=""/>
+              <div>
+                <div class="font-medium text-forest-800">Marisol & Daniel</div>
+                <div class="text-sm text-ink-500">Inherited home · Phoenix, AZ</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="rounded-3xl bg-forest-700 text-cream-50 p-8 flex flex-col justify-between min-h-[380px]">
+            <blockquote class="font-display text-2xl leading-snug">
+              "I wasn't ready to sell. They didn't try to convince me to. They helped me get a tenant in and check back in six months later."
+            </blockquote>
+            <figcaption class="mt-8 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop&crop=faces&q=80" class="w-12 h-12 rounded-full object-cover" alt=""/>
+              <div>
+                <div class="font-medium">Theresa</div>
+                <div class="text-sm text-cream-100/70">Convert to rental · Austin, TX</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="rounded-3xl bg-cream-100 p-8 flex flex-col justify-between min-h-[380px]">
+            <blockquote class="font-display text-2xl leading-snug text-forest-800">
+              "Our timeline was tight because of the divorce. They closed in 11 days and didn't ask us to do anything to the house first."
+            </blockquote>
+            <figcaption class="mt-8 flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=faces&q=80" class="w-12 h-12 rounded-full object-cover" alt=""/>
+              <div>
+                <div class="font-medium text-forest-800">James</div>
+                <div class="text-sm text-ink-500">Direct sale · Sacramento, CA</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FAQ ======================== -->
+    <section id="faq" class="relative py-28 bg-cream-100 border-y border-ink-900/5">
+      <div class="max-w-5xl mx-auto px-6 lg:px-10">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <div class="text-xs font-medium tracking-widest uppercase text-clay-600 mb-4">Honest answers</div>
+          <h2 class="font-display text-4xl md:text-5xl tracking-tightest text-forest-800 leading-[1.05]">
+            What homeowners ask before reaching out.
+          </h2>
+        </div>
+
+        <div class="divide-y divide-ink-900/10 border-y border-ink-900/10">
+          <details class="group py-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-display text-xl text-forest-800">Is this the same as a "we buy houses" company?</span>
+              <span class="chev w-8 h-8 rounded-full border border-ink-900/15 flex items-center justify-center text-ink-700">+</span>
+            </summary>
+            <p class="mt-4 text-ink-700 leading-relaxed max-w-3xl">
+              No — and we understand the skepticism. A direct cash sale is one of four options we'll walk through. For
+              many homeowners, it isn't the right one. We'd rather lose the deal than push you into it.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-display text-xl text-forest-800">Do I need to clean or repair anything before we talk?</span>
+              <span class="chev w-8 h-8 rounded-full border border-ink-900/15 flex items-center justify-center text-ink-700">+</span>
+            </summary>
+            <p class="mt-4 text-ink-700 leading-relaxed max-w-3xl">
+              No. Not for the conversation, and usually not for the option you choose either. Most of the homes we work
+              with are in some state of "we haven't gotten to it." That's fine.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-display text-xl text-forest-800">What does it cost to talk to you?</span>
+              <span class="chev w-8 h-8 rounded-full border border-ink-900/15 flex items-center justify-center text-ink-700">+</span>
+            </summary>
+            <p class="mt-4 text-ink-700 leading-relaxed max-w-3xl">
+              Nothing. There's no consulting fee, no commission you owe, no obligation after we've talked. If you don't
+              choose any of the paths we map, you walk away with a clearer picture and our number.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-display text-xl text-forest-800">Can you really close on a tight timeline?</span>
+              <span class="chev w-8 h-8 rounded-full border border-ink-900/15 flex items-center justify-center text-ink-700">+</span>
+            </summary>
+            <p class="mt-4 text-ink-700 leading-relaxed max-w-3xl">
+              For a direct sale, yes — generally within 7 to 21 days, depending on title. For a renovation or
+              partnership path, the timeline is whatever fits your situation. We pace to you.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-display text-xl text-forest-800">My siblings and I aren't aligned on what to do with the house. Can you help?</span>
+              <span class="chev w-8 h-8 rounded-full border border-ink-900/15 flex items-center justify-center text-ink-700">+</span>
+            </summary>
+            <p class="mt-4 text-ink-700 leading-relaxed max-w-3xl">
+              Often, yes. We've sat in many of those conversations. Having concrete numbers on the table — sell now,
+              hold and rent, partner on a renovation — usually moves the discussion forward faster than another family
+              meeting without them.
+            </p>
+          </details>
+
+          <details class="group py-6">
+            <summary class="flex items-center justify-between cursor-pointer list-none">
+              <span class="font-display text-xl text-forest-800">What if I'm behind on my mortgage?</span>
+              <span class="chev w-8 h-8 rounded-full border border-ink-900/15 flex items-center justify-center text-ink-700">+</span>
+            </summary>
+            <p class="mt-4 text-ink-700 leading-relaxed max-w-3xl">
+              You still have options — almost always more than you think. Reach out before the foreclosure date, not
+              after. We'll be honest about what's realistic on your timeline.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== CONTACT / CTA ======================== -->
+    <section id="contact" class="relative py-28 bg-cream-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-12 items-start">
+          <div class="lg:col-span-5">
+            <div class="text-xs font-medium tracking-widest uppercase text-clay-600 mb-4">Start a conversation</div>
+            <h2 class="font-display text-4xl md:text-5xl tracking-tightest text-forest-800 leading-[1.02]">
+              Tell us about the property. We'll do the rest of the listening.
+            </h2>
+            <p class="mt-5 text-ink-700 text-lg leading-relaxed max-w-md">
+              Share a few details below. Within one business day, you'll hear from a real person — not a form letter,
+              not a robocall. No obligation. Just a conversation.
+            </p>
+
+            <div class="mt-10 space-y-5">
+              <div class="flex items-center gap-4">
+                <div class="w-11 h-11 rounded-full bg-forest-700/10 text-forest-700 flex items-center justify-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.37 1.9.71 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.71A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="text-sm text-ink-500">Call or text</div>
+                  <a href="tel:" class="font-display text-xl text-forest-800">(555) 555-0142</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-11 h-11 rounded-full bg-forest-700/10 text-forest-700 flex items-center justify-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <div class="text-sm text-ink-500">Email</div>
+                  <a href="mailto:hello@vive-om.com" class="font-display text-xl text-forest-800">hello@vive-om.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="lg:col-span-7 bg-forest-800 text-cream-50 rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-5">
+            <label class="md:col-span-1 flex flex-col gap-2">
+              <span class="text-xs uppercase tracking-widest text-cream-100/70">First name</span>
+              <input type="text" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="Marisol" />
+            </label>
+            <label class="md:col-span-1 flex flex-col gap-2">
+              <span class="text-xs uppercase tracking-widest text-cream-100/70">Last name</span>
+              <input type="text" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="Reyes" />
+            </label>
+            <label class="md:col-span-1 flex flex-col gap-2">
+              <span class="text-xs uppercase tracking-widest text-cream-100/70">Email</span>
+              <input type="email" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="you@email.com" />
+            </label>
+            <label class="md:col-span-1 flex flex-col gap-2">
+              <span class="text-xs uppercase tracking-widest text-cream-100/70">Phone (optional)</span>
+              <input type="tel" class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="(___) ___-____" />
+            </label>
+            <label class="md:col-span-2 flex flex-col gap-2">
+              <span class="text-xs uppercase tracking-widest text-cream-100/70">Property address</span>
+              <input type="text" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="123 Maple St, City, State" />
+            </label>
+            <fieldset class="md:col-span-2">
+              <legend class="text-xs uppercase tracking-widest text-cream-100/70 mb-3">What best describes the situation?</legend>
+              <div class="flex flex-wrap gap-2">
+                <label class="cursor-pointer">
+                  <input type="checkbox" class="peer sr-only"/>
+                  <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Inherited home</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="checkbox" class="peer sr-only"/>
+                  <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Foreclosure / behind on payments</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="checkbox" class="peer sr-only"/>
+                  <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Divorce / relocation</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="checkbox" class="peer sr-only"/>
+                  <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Major repairs needed</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="checkbox" class="peer sr-only"/>
+                  <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Vacant property</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="checkbox" class="peer sr-only"/>
+                  <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Tired landlord</span>
+                </label>
+                <label class="cursor-pointer">
+                  <input type="checkbox" class="peer sr-only"/>
+                  <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Just exploring</span>
+                </label>
+              </div>
+            </fieldset>
+            <label class="md:col-span-2 flex flex-col gap-2">
+              <span class="text-xs uppercase tracking-widest text-cream-100/70">Anything else we should know? (optional)</span>
+              <textarea rows="3" class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40 resize-none" placeholder="Timeline, who's involved, what you've already considered…"></textarea>
+            </label>
+            <div class="md:col-span-2 flex flex-wrap items-center justify-between gap-4 mt-4">
+              <p class="text-xs text-cream-100/60 max-w-xs">By sending, you agree we may reach out by email or phone. We never share your information.</p>
+              <button type="submit" class="inline-flex items-center gap-2 bg-clay-500 hover:bg-clay-600 text-cream-50 px-7 py-3.5 rounded-full font-medium transition">
+                Send message
+                <svg class="w-4 h-4" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="relative bg-forest-900 text-cream-100/80 pt-20 pb-10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-10 pb-14 border-b border-cream-50/10">
+          <div class="lg:col-span-5">
+            <a href="#" class="flex items-center gap-2 mb-5">
+              <span class="w-9 h-9 rounded-full bg-clay-500 flex items-center justify-center">
+                <span class="font-display text-cream-50 text-lg leading-none">V</span>
+              </span>
+              <span class="font-display text-xl text-cream-50">Vive Om Property Solutions</span>
+            </a>
+            <p class="max-w-md leading-relaxed">
+              Real estate solutions designed around your situation. We listen first, then build a plan that fits your
+              timeline, your home, and the life you're trying to land in.
+            </p>
+          </div>
+          <div class="lg:col-span-2">
+            <div class="text-xs uppercase tracking-widest text-clay-400 mb-4">Explore</div>
+            <ul class="space-y-2">
+              <li><a href="#situations" class="hover:text-cream-50">Situations</a></li>
+              <li><a href="#options" class="hover:text-cream-50">Options</a></li>
+              <li><a href="#process" class="hover:text-cream-50">Process</a></li>
+              <li><a href="#faq" class="hover:text-cream-50">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="lg:col-span-2">
+            <div class="text-xs uppercase tracking-widest text-clay-400 mb-4">Reach us</div>
+            <ul class="space-y-2">
+              <li><a href="tel:" class="hover:text-cream-50">(555) 555-0142</a></li>
+              <li><a href="mailto:hello@vive-om.com" class="hover:text-cream-50">hello@vive-om.com</a></li>
+              <li><a href="#contact" class="hover:text-cream-50">Start a conversation</a></li>
+            </ul>
+          </div>
+          <div class="lg:col-span-3">
+            <div class="text-xs uppercase tracking-widest text-clay-400 mb-4">A note on what we are</div>
+            <p class="text-sm leading-relaxed">
+              We're a real estate solutions firm — not a brokerage, not a lender. For legal, tax, or bankruptcy advice
+              specific to your situation, we'll always recommend talking to your attorney or CPA.
+            </p>
+          </div>
+        </div>
+        <div class="pt-8 flex flex-wrap items-center justify-between gap-4 text-sm text-cream-100/60">
+          <div>© <span id="year"></span> Vive Om Property Solutions. All rights reserved.</div>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-cream-50">Privacy</a>
+            <a href="#" class="hover:text-cream-50">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
