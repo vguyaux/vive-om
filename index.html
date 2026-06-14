@@ -745,71 +745,80 @@
             </div>
           </div>
 
-          <form class="lg:col-span-7 bg-forest-800 text-cream-50 rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-5">
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="lg:col-span-7 bg-forest-800 text-cream-50 rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-5">
+            <!-- Web3Forms config -->
+            <input type="hidden" name="access_key" value="21477560-4352-432e-83e7-bc88940d0ac8" />
+            <input type="hidden" name="subject" value="New property inquiry from vive-om.com" />
+            <input type="hidden" name="from_name" value="Vive Om Property Solutions" />
+            <!-- Honeypot spam filter (hidden from humans) -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+
             <label class="md:col-span-1 flex flex-col gap-2">
               <span class="text-xs uppercase tracking-widest text-cream-100/70">First name</span>
-              <input type="text" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="Marisol" />
+              <input type="text" name="First name" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="Marisol" />
             </label>
             <label class="md:col-span-1 flex flex-col gap-2">
               <span class="text-xs uppercase tracking-widest text-cream-100/70">Last name</span>
-              <input type="text" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="Reyes" />
+              <input type="text" name="Last name" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="Reyes" />
             </label>
             <label class="md:col-span-1 flex flex-col gap-2">
               <span class="text-xs uppercase tracking-widest text-cream-100/70">Email</span>
-              <input type="email" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="you@email.com" />
+              <input type="email" name="email" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="you@email.com" />
             </label>
             <label class="md:col-span-1 flex flex-col gap-2">
               <span class="text-xs uppercase tracking-widest text-cream-100/70">Phone (optional)</span>
-              <input type="tel" class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="(___) ___-____" />
+              <input type="tel" name="Phone" class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="(___) ___-____" />
             </label>
             <label class="md:col-span-2 flex flex-col gap-2">
               <span class="text-xs uppercase tracking-widest text-cream-100/70">Property address</span>
-              <input type="text" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="123 Maple St, City, State" />
+              <input type="text" name="Property address" required class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40" placeholder="123 Maple St, City, State" />
             </label>
             <fieldset class="md:col-span-2">
               <legend class="text-xs uppercase tracking-widest text-cream-100/70 mb-3">What best describes the situation?</legend>
               <div class="flex flex-wrap gap-2">
                 <label class="cursor-pointer">
-                  <input type="checkbox" class="peer sr-only"/>
+                  <input type="checkbox" name="Situation" value="Inherited home" class="peer sr-only"/>
                   <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Inherited home</span>
                 </label>
                 <label class="cursor-pointer">
-                  <input type="checkbox" class="peer sr-only"/>
+                  <input type="checkbox" name="Situation" value="Foreclosure / behind on payments" class="peer sr-only"/>
                   <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Foreclosure / behind on payments</span>
                 </label>
                 <label class="cursor-pointer">
-                  <input type="checkbox" class="peer sr-only"/>
+                  <input type="checkbox" name="Situation" value="Divorce / relocation" class="peer sr-only"/>
                   <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Divorce / relocation</span>
                 </label>
                 <label class="cursor-pointer">
-                  <input type="checkbox" class="peer sr-only"/>
+                  <input type="checkbox" name="Situation" value="Major repairs needed" class="peer sr-only"/>
                   <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Major repairs needed</span>
                 </label>
                 <label class="cursor-pointer">
-                  <input type="checkbox" class="peer sr-only"/>
+                  <input type="checkbox" name="Situation" value="Vacant property" class="peer sr-only"/>
                   <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Vacant property</span>
                 </label>
                 <label class="cursor-pointer">
-                  <input type="checkbox" class="peer sr-only"/>
+                  <input type="checkbox" name="Situation" value="Tired landlord" class="peer sr-only"/>
                   <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Tired landlord</span>
                 </label>
                 <label class="cursor-pointer">
-                  <input type="checkbox" class="peer sr-only"/>
+                  <input type="checkbox" name="Situation" value="Just exploring" class="peer sr-only"/>
                   <span class="px-4 py-2 rounded-full border border-cream-50/30 text-sm text-cream-100 peer-checked:bg-clay-500 peer-checked:border-clay-500 peer-checked:text-cream-50 transition inline-block">Just exploring</span>
                 </label>
               </div>
             </fieldset>
             <label class="md:col-span-2 flex flex-col gap-2">
               <span class="text-xs uppercase tracking-widest text-cream-100/70">Anything else we should know? (optional)</span>
-              <textarea rows="3" class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40 resize-none" placeholder="Timeline, who's involved, what you've already considered…"></textarea>
+              <textarea name="Message" rows="3" class="bg-transparent border-b border-cream-50/30 focus:border-clay-400 outline-none py-2 text-cream-50 placeholder:text-cream-100/40 resize-none" placeholder="Timeline, who's involved, what you've already considered…"></textarea>
             </label>
             <div class="md:col-span-2 flex flex-wrap items-center justify-between gap-4 mt-4">
               <p class="text-xs text-cream-100/60 max-w-xs">By sending, you agree we may reach out by email or phone. We never share your information.</p>
-              <button type="submit" class="inline-flex items-center gap-2 bg-clay-500 hover:bg-clay-600 text-cream-50 px-7 py-3.5 rounded-full font-medium transition">
-                Send message
+              <button type="submit" class="inline-flex items-center gap-2 bg-clay-500 hover:bg-clay-600 text-cream-50 px-7 py-3.5 rounded-full font-medium transition disabled:opacity-60 disabled:cursor-not-allowed">
+                <span class="btn-label">Send message</span>
                 <svg class="w-4 h-4" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
               </button>
             </div>
+            <!-- Submission status -->
+            <div id="form-result" class="md:col-span-2 hidden text-sm rounded-2xl px-5 py-4" role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
@@ -868,6 +877,66 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Contact form → Web3Forms (AJAX, inline feedback)
+      (function () {
+        var form = document.getElementById('contact-form');
+        if (!form) return;
+        var result = document.getElementById('form-result');
+        var button = form.querySelector('button[type="submit"]');
+        var label = button ? button.querySelector('.btn-label') : null;
+        var defaultLabel = label ? label.textContent : '';
+
+        function show(message, ok) {
+          result.classList.remove('hidden');
+          result.classList.toggle('bg-clay-500/15', !ok);
+          result.classList.toggle('text-cream-50', true);
+          result.classList.toggle('bg-cream-50/10', ok);
+          result.innerHTML = message;
+        }
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          if (button) button.disabled = true;
+          if (label) label.textContent = 'Sending…';
+          show('Sending your message…', true);
+
+          fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: new FormData(form),
+          })
+            .then(function (response) {
+              return response.json().then(function (data) {
+                return { ok: response.ok, data: data };
+              });
+            })
+            .then(function (res) {
+              if (res.ok && res.data.success) {
+                form.reset();
+                show(
+                  '<strong>Thank you.</strong> Your message is on its way — we\'ll be in touch within one business day.',
+                  true
+                );
+              } else {
+                show(
+                  (res.data && res.data.message ? res.data.message : 'Something went wrong.') +
+                    ' Please try again, or email <a class="underline" href="mailto:info@vive-om.com">info@vive-om.com</a>.',
+                  false
+                );
+              }
+            })
+            .catch(function () {
+              show(
+                'Network error. Please try again, or email <a class="underline" href="mailto:info@vive-om.com">info@vive-om.com</a>.',
+                false
+              );
+            })
+            .then(function () {
+              if (button) button.disabled = false;
+              if (label) label.textContent = defaultLabel;
+            });
+        });
+      })();
     </script>
   </body>
 </html>
